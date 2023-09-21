@@ -1,0 +1,164 @@
+body {
+  font-family: sans-serif;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.jumbotron {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #1aa184;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.jumbotron p {
+  margin-top: -20px;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  text-align: center;
+  background-color: #1aa184;
+  padding: 2px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #058b70;
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background-color: #004b3c;
+}
+
+main {
+  display: flex;
+  box-sizing: border-box;
+}
+
+article {
+  margin: 30px auto;
+}
+
+h2 {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.left {
+  margin: 0px 5px 0px 0px;
+  width: 70%;
+  padding: 10px 20px;
+}
+
+.about {
+  float: left;
+}
+
+.about p {
+  margin-top: -20px;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.about span {
+  color: #1abc9c;
+}
+
+.exp span,
+.education span,
+.skill .bold {
+  font-weight: bold;
+}
+
+.skill td {
+  padding: 5px;
+}
+
+.right {
+  margin: 0px 5px 0px 0px;
+  width: 30%;
+  padding: 10px 20px;
+  float: left;
+  text-align: center;
+}
+
+.imag {
+  border-radius: 20%;
+  box-shadow: 0px 0px 25px rgb(1, 60, 74);
+}
+
+/* Style social media links */
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.fa:hover {
+  color: #007bff;
+}
+
+.space {
+  margin-top: -10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #999;
+}
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .left {
+    width: 92%;
+    margin: 8px;
+    padding: 10px 20px;
+  }
+
+  .right {
+    width: 92%;
+    margin: 8px;
+    padding: 10px 20px;
+  }
+}
