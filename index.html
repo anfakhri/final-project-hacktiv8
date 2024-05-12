@@ -2,222 +2,236 @@
 <html lang="en">
 
 <head>
-  <link rel="shortcut icon" href="assets/favicon2.ico" type="image/x-icon">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="asset/style.css">
-  <title>My Portfolio</title>
+    <link rel="shortcut icon" href="assets/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
 </head>
 
-<body id="home">
-  <header>
-    <div class="jumbotron">
-      <h1>Abdunnashir Fakhri</h1>
-      <p>Web Developer</p>
+<body id="home" class="bg-gray-100">
+<header class="bg-blue-900 fixed top-0 w-full z-50">
+    <div class="container mx-auto py-8 text-center">
+        <h1 class="text-5xl text-white font-bold">Abdunnashir Fakhri</h1>
+        <p class="text-2xl text-white">Web Developer</p>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#interest">Interests</a></li>
-        <li><a href="#award ">Award </a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="text-center">
+        <ul class="md:flex justify-center py-2 md:space-x-6 grid grid-cols-4">
+            <li><a href="#home" class="text-white hover:underline">Beranda</a></li>
+            <li><a href="#about" class="text-white hover:underline">About</a></li>
+            <li><a href="#experiences" class="text-white hover:underline">Experiences</a></li>
+            <li><a href="#education" class="text-white hover:underline">Education</a></li>
+            <li><a href="#skill" class="text-white hover:underline">Skills</a></li>
+            <li><a href="#interest" class="text-white hover:underline">Interests</a></li>
+            <li><a href="#award" class="text-white hover:underline">Awards</a></li>
+            <li><a href="#contact" class="text-white hover:underline">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-  <main >
-    <div class="card left" id="about">
-      <h2>About Me</h2>
-      <article class="about">
-        <p>
-        Introducing me Abdunnashir Fakhri, usually called Fakhri, I am  a graduate of S1 Information Systems at STMIK Jakarta STI&K, 
-        Has experience in creating graphic designs and editing photos / videos, as well as in the process of web creation / development. 
-        I am a team worker and adaptable team worker and can work independently. and  currently looking for a job opportunity 
-        that can provide more opportunities to develop and add insight into knowledge related to the field of IT (Information Technology) 
-        / digital media / Web Programming.
-        </p>
-      </article>
-      <div id="experiences">
-        <article class="exp">
-        <h3>Work Experience</h3>
-        <p>
-          <span>Staff IT Junior ( Web Development )</span> ||
-          <span>Sofyan Corporation</span> ||
-          <span>Okt 2022 - Now</span>
-          <ul>
-            <li>Create and develop websites using the laravel php framework</li>
-            <li>Create and develop Apps</li>
-          </ul>
-        </p>
-        <p>
-          <span>Freelance ( Quality Control )</span> ||
-          <span>Asiasoft</span> ||
-          <span>Jun 2022 - Sep 2022 </span>
-          <ul>
-            <li>Perform data scanning, rename data </li>
-            <li>Perform data entry</li>
-          </ul>
-        </p>
-        </article>
-      </div>
-      
-      <div id="education">
-        <article class="education">
-        <h3>Education</h3>
-        <p>
-          <span>STMIK Jakarta STI&K</span> ||
-          <span>Bachelor of Information Systems (S.Kom)</span> ||
-          <span>Sept 2017 - Mar 2022</span>
-          <ul>
-            <li>GPA : 3.50 / 4.00</li>
-          </ul>
-        </p>
-        <p>
-          <span>SMK Tunas Grafika Informatika</span> ||
-          <span>Vocational High School</span>
-        </p>
-      </article>
-      </div>
-     <div id="skill">
- <article class="skill">
-        <h3>Skills</h3>
-        <table>
-          <tr>
-            <td class="bold">Languages</td>
-            <td class="bold">Frameworks</td>
-            <td class="bold">Tools</td>
-          </tr>
-          <tr>
-             <td>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>PHP</li>
-                <li>Javascript</li>
-                <li>SQL</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>Bootstrap</li>
-                <li>Laravel</li>
-              </ul>
-            </td>
-            <td>
-               <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>Visual Studio Code</li>
-                <li>DBeaver</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
+</header>
+
+
+    <main class="container mx-auto grid md:grid-cols-1 mt-52 ">
+        <div class="grid grid-cols-1 md:grid-cols-1 gap-8 md:mr-8">
+            <div class="p-8 bg-white shadow-md" id="about">
+                <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+                <p class="text-gray-700">
+                    Introducing me Abdunnashir Fakhri, usually called Fakhri, I am a graduate of S1 Information Systems
+                    at
+                    STMIK Jakarta STI&K,
+                    Has experience in creating graphic designs and editing photos / videos, as well as in the process of
+                    web
+                    creation / development.
+                    I am a team worker and adaptable team worker and can work independently. and currently looking for a
+                    job
+                    opportunity
+                    that can provide more opportunities to develop and add insight into knowledge related to the field
+                    of IT
+                    (Information Technology)
+                    / digital media / Web Programming.
+                </p>
+            </div>
+            <div class="p-8 bg-white shadow-md" id="experiences">
+                <h2 class="text-3xl font-semibold mb-4">Work Experience</h2>
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold">Web Development Team Lead</h3>
+                    <p class="text-gray-700">Sofyan Corporation | February 2024 - Now</p>
+                    <ul class="list-disc ml-4">
+                        <li>Design Databases Learning Management System</li>
+                        <li>Develop learning management systems with framework laravel API</li>
+                        <li>Make team work reports</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold">Staff IT Junior (Web Development)</h3>
+                    <p class="text-gray-700">Sofyan Corporation | October 2022 - Now</p>
+                    <ul class="list-disc ml-4">
+                        <li>Create and develop websites using the laravel php framework</li>
+                        <li>Create and develop Apps</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Freelance (Quality Control)</h3>
+                    <p class="text-gray-700">Asiasoft | June 2022 - September 2022</p>
+                    <ul class="list-disc ml-4">
+                        <li>Perform data scanning, rename data </li>
+                        <li>Perform data entry</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-8 bg-white shadow-md" id="education">
+                <h2 class="text-3xl font-semibold mb-4">Education</h2>
+                <div>
+                    <h3 class="text-xl font-semibold">STMIK Jakarta STI&K</h3>
+                    <p class="text-gray-700">Bachelor of Information Systems (S.Kom) | Sept 2017 - Mar 2022</p>
+                    <ul class="list-disc ml-4">
+                        <li>GPA: 3.50 / 4.00</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-xl font-semibold">SMK Tunas Grafika Informatika</h3>
+                    <p class="text-gray-700">Vocational High School</p>
+                </div>
+            </div>
+            <div class="p-8 bg-white shadow-md" id="skill">
+                <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">Languages</h3>
+                        <ul class="list-disc ml-4">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>Javascript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Frameworks</h3>
+                        <ul class="list-disc ml-4">
+                            <li>Bootstrap</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Tools</h3>
+                        <ul class="list-disc ml-4">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Visual Studio Code</li>
+                            <li>DBeaver</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-xl font-semibold">Others</h3>
+                    <ul class="list-disc ml-4">
+                        <li>Instalasi Software/ OS</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Office</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Canva</li>
+                        <li>Filmora</li>
+                        <li>Adobe Premier</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-8 bg-white shadow-md" id="interest">
+                <h2 class="text-3xl font-semibold mb-4">Interests</h2>
+                <ul class="list-disc ml-4">
+                    <li>Camping</li>
+                    <li>Traveling</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+            <div class="p-8 bg-white shadow-md" id="award">
+                <h2 class="text-3xl font-semibold mb-4">Awards</h2>
+                <ul class="list-disc ml-4">
+                    <li>2nd Runner-up in live coding</li>
+                    <li>Fundamental Web Programmer - Hacktiv8</li>
+                </ul>
+            </div>
             
-          </tr>
-          <tr>
-            <td class="bold">Others</td>
-          </tr>
-          <tr>
-            <td>
-               <ul>
-                 <li>Instalasi Software/ OS</li>
-                 <li>Microsoft Word</li>
-                 <li>Microsoft Office</li>
-                 <li>Adobe Photoshop</li>
-                 <li>Adobe Illustrator</li>
-                 <li>Canva</li>
-                 <li>Filmora</li>
-                 <li>Adobe Premier</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </article>
-     </div>
-     <div id="interest">
-        <article class="interest">
-        <h3>Interests</h3>
-        <table>
-          <tr>
-            <td class="bold">
-              <ul>
-                <li>Camping</li>
-                <li>Traveling</li>
-                <li>Web Development</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </article>
-     </div>
-      <div id="award">
-        <article class="award">
-        <h3>Award</h3>
-        <table>
-          <tr>
-            <td class="bold">2nd Runner-up in live coding</td>
-          </tr>
-           <tr>
-            <td class="bold">Fundamental Web Programmer - Hacktiv8</td>
-          </tr>
-        </table>
-      </article>
-     </div>
-    </div>
-    <div class="card right" id="contact">
-      <h2>Biodata</h2>
-      <aside>
-        <figure>
-          <img class="imag" src="asset/kray.jpg" alt="abdunnashirfakhri" width="150">
-          <figcaption>Abdunnashir Fakhri</figcaption>
-        </figure>
-        <p>Place and Date of Birth :</p>
-        <p class="space">Tangerang, 11 April 1999</p>
-        <p>Address :</p>
-        <p class="space">Jl. Chairil Anwar Gg. Perintis Rt 01 Rw 05</p>
-        <p>Phone :</p>
-        <p class="space">085894727374</p>
-        <p>Email :</p>
-        <p class="space">abdunnashirfakhri@gmail.com</p>
-        <h4>Social Media</h4>
-        <p class="space">
-          <a href="https://github.com/anfakhri" class="fa fa-github" target="_blank"> GitHub</a></p>
-        <p class="space"> 
-        <a href="https://www.linkedin.com/in/abdunnashir-fakhri"
-        class="fa fa-linkedin"
-        target="_blank">
-        Linkedln
-        </a></p>
-        <p class="space">
-        <a href="https://instagram.com/abdunnashirfakhri"
-        class="fa fa-instagram"
-        target="_blank" >
-        Instagram
-        </a></p>
-        <p class="space">
-        <a href="https://www.facebook.com/abdunnashirfakhri"
-        class="fa fa-facebook"
-        target="_blank">
-       Facebook
-      </a></p>
-      </aside>
-    </div>
-  </main>
-  <footer>
-    &copy; 2023. Created by 
-    <a class="fa" href="https://instagram.com/abdunnashirfakhri" target="_blank" >
-        Abdunnashir Fakhri
-    </a>
-  </footer>
+        </div>
+
+        <div class="pt-8 md:pt-0 md:grid md:col-span-4 md:col-end-13">
+            <div class="p-8 bg-white shadow-md" id="contact">
+                <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+                <div>
+                    <h3 class="text-xl font-semibold">Biodata</h3>
+                    <figure class="mt-4">
+                        <img class="rounded-full h-48 w-48 mx-auto" src="asset/kray.jpg" alt="abdunnashirfakhri">
+                        <figcaption class="text-center mt-2">Abdunnashir Fakhri</figcaption>
+                    </figure>
+                    <div class="mt-4 text-gray-700">
+                        <p><span class="font-semibold">Place and Date of Birth :</span> Tangerang, 11 April 1999</p>
+                        <p><span class="font-semibold">Address :</span> Jl. Chairil Anwar Gg. Perintis Rt 01 Rw 05</p>
+                        <p><span class="font-semibold">Phone :</span> 085894727374</p>
+                        <p><span class="font-semibold">Email :</span> abdunnashirfakhri@gmail.com</p>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold">Social Media</h3>
+                    <div class="flex flex-col text-center justify-center mt-4">
+                        <a href="https://github.com/anfakhri" class="fa fa-github text-3xl mx-4 hover:text-blue-600 py-2" target="_blank"> GitHub</a>
+                        <a href="https://www.linkedin.com/in/abdunnashir-fakhri" class="fa fa-linkedin text-3xl mx-4 hover:text-blue-600 py-2"
+                            target="_blank"> Linkedln</a>
+                        <a href="https://instagram.com/abdunnashirfakhri" class="fa fa-instagram text-3xl mx-4 hover:text-blue-600 py-2"
+                            target="_blank"> Instagram</a>
+                        <a href="https://www.facebook.com/abdunnashirfakhri" class="fa fa-facebook text-3xl mx-4 hover:text-blue-600 py-2"
+                            target="_blank"> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="bg-blue-900 py-4 text-center text-white">
+        &copy; 2023. Created by <a href="https://instagram.com/abdunnashirfakhri" class="text-md hover:text-blue-300" target="_blank">Abdunnashir Fakhri</a> 
+    </footer>
+    <script>
+        // Fungsi untuk menangani klik tautan
+        function smoothScroll(target) {
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetElement = document.querySelector(target);
+            const targetPosition = targetElement.getBoundingClientRect().top;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - headerHeight;
+            const duration = 1000;
+            let start = null;
+
+            // Fungsi animasi scroll
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
+                if (progress < duration) window.requestAnimationFrame(step);
+            }
+
+            // Fungsi easeInOutQuad untuk animasi yang halus
+            function easeInOutQuad(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+
+            // Memulai animasi scroll
+            window.requestAnimationFrame(step);
+        }
+
+        // Menambahkan event listener untuk setiap tautan
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = this.getAttribute('href');
+                smoothScroll(target);
+            });
+        });
+    </script>
 </body>
 
 </html>
